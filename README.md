@@ -3,6 +3,6 @@
 
 
 
-| Project       | Description                                             | Code                              |
-| ------------- | ------------------------------------------------------- | --------------------------------- |
-|               |                                                         |                                   |
+| Project       | Description                                             | Code                                  |
+| ------------- | ------------------------------------------------------- | ------------------------------------- |
+| Basic REST API| Get, Post, Patch states and Zod Validation              | [Ver](projects/04-express-rest-api/)  |
