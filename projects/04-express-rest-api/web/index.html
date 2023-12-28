@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rest</title>
+    <style>
+        article {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 300px;
+            vertical-align: top;
+            text-align: center;
+        }
+        article p {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: gray;
+        }
+        article h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            color: black;
+            font-weight: normal;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+    </style>
+    <script type="module">
+        fetch('http://localhost:3000/states')
+            .then(res => res.json())
+            .then(states => {
+                const html = states.map(state => {
+                    return `
+                        <article data-id="${state.key}">
+                            <h2>${state.key}</h2>
+                            <p>Size: ${state.size}</p>
+                            <p>Counted: ${state.counted}</p>
+                            <p>Checked: ${state.checked}</p>
+                        </article>
+                    `
+                }).join('')
+
+                document.querySelector('body').innerHTML = html
+            })
+    </script>
+</head>
+<body></body>
+</html>
