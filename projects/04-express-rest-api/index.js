@@ -36,6 +36,19 @@ app.post('/states', (req, res) => {
   res.status(201).json(newState)
 })
 
+app.delete('/states/:key', (req, res) => {
+  const { key } = req.params
+  const stateIndex = states.findIndex((state) => state.key === key)
+
+  if (stateIndex === -1) {
+    return res.status(404).json({ error: 'State not found' })
+  }
+
+  states.splice(stateIndex, 1)
+
+  return res.json({ message: 'State deleted' })
+})
+
 app.patch('/states/:key', (req, res) => {
   const result = validateUpdate(req.body)
 
