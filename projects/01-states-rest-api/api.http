@@ -1,0 +1,30 @@
+### Get states
+GET http://localhost:3000/states
+
+### Get states from PRD REST API
+GET https://rest-api-dev-fhaj.3.us-1.fl0.io/states
+
+### Get state by key
+GET http://localhost:3000/states?key=back-cauldron
+
+### Post new state
+POST http://localhost:3000/states
+Content-Type: application/json
+
+{
+    "key": "call-from-beyond",
+    "size": 1,
+    "counted": false,
+    "checked": []
+}
+
+### DELETE a state
+DELETE http://localhost:3000/states/back-cauldron
+
+### PUT to Update a state
+PATCH http://localhost:3000/states/allies-of-avalon
+Content-Type: application/json
+
+{
+    "counted": false
+}
