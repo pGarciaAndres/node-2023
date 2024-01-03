@@ -1,0 +1,5 @@
+{
+  "editor.codeActionsOnSave": {},
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true
+}

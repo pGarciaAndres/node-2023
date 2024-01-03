@@ -1,0 +1,16 @@
+### Get data
+GET http://localhost:3000/
+
+### Post create data
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "titulo": "Torrente",
+    "anio": 1998,
+    "genero": "Comedia",
+    "director": "Santiago Segura"
+}
+
+### Wrong data
+POST http://localhost:3000/error

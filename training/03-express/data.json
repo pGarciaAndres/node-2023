@@ -1,0 +1,22 @@
+{
+    "players": [
+        {
+            "name": "LeBron James",
+            "team": "Los Angeles Lakers",
+            "position": "Forward",
+            "jersey_number": 23
+        },
+        {
+            "name": "Stephen Curry",
+            "team": "Golden State Warriors",
+            "position": "Guard",
+            "jersey_number": 30
+        },
+        {
+            "name": "Kevin Durant",
+            "team": "Brooklyn Nets",
+            "position": "Forward",
+            "jersey_number": 7
+        }
+    ]
+}

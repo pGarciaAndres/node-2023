@@ -1,0 +1,22 @@
+{
+    "peliculas": [
+        {
+            "titulo": "Titanic",
+            "anio": 1997,
+            "genero": "Drama",
+            "director": "James Cameron"
+        },
+        {
+            "titulo": "El Padrino",
+            "anio": 1972,
+            "genero": "Crimen",
+            "director": "Francis Ford Coppola"
+        },
+        {
+            "titulo": "Avengers: Endgame",
+            "anio": 2019,
+            "genero": "Acción",
+            "director": "Anthony Russo, Joe Russo"
+        }
+    ]
+}

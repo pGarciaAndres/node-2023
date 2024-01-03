@@ -1,0 +1,16 @@
+### Get data
+GET http://localhost:1234/
+
+### Post create data
+POST http://localhost:1234/create
+Content-Type: application/json
+
+{
+    "name": "Devin Booker",
+    "team": "Phoenix Suns",
+    "position": "Forward",
+    "jersey_number": 1
+}
+
+### Wrong data
+POST http://localhost:1234/error
