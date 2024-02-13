@@ -5,4 +5,4 @@
 
 | Project       | Description                                                     | Code                                  |
 | ------------- | --------------------------------------------------------------- | ------------------------------------- |
-| Basic REST API| Get, Get by key, Post, Delete, Patch states and Zod Validation  | [Ver](projects/04-express-rest-api/)  |
+| Basic REST API| Get, Get by key, Post, Delete, Patch states and Zod Validation  | [Ver](projects/01-states-rest-api/)  |
